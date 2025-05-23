@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medidor de Umidade</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenWatch</title>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <h1>Medidor de Umidade</h1>
-    <p id="umidade">Carregando...</p>
+  <div class="container">
+    <header>
+      <img src="logo.svg" alt="Logo" class="logo"> <!-- Substitua por sua logo -->
+    </header>
 
-    <script src="./scripts/connect_api.js"></script>
+    <main>
+
+      <div id="medidor"></div>
+      <div id="umidade" class="umidade-display"></div>
+
+
+      <div class="emoji-msg">
+        <span class="emoji">😐</span>
+        <div class="msg">Vamos cuidar da sua plantinha?</div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="input-wrapper">
+        <button class="search-btn">
+          🔍 Nome da planta
+        </button>
+        <div class="dropdown-indicator">⌄</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./scripts/js-fluid-meter.js"></script>
+  <script src="./scripts/connect_api.js"></script>
+  
+  </script>
 </body>
-</html>

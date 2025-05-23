@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.logo {
+  width: 40px;
+  margin-bottom: 30px;
+}
+
+#medidor {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /* Apenas para visualização do espaço reservado */
+  /* background-color: #e0e0e0; */
+}
+
+.emoji-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.emoji {
+  font-size: 40px;
+}
+
+.msg {
+  background: linear-gradient(to right, #00ff87, #0fefb6);
+  padding: 10px 20px;
+  border-radius: 999px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aaff;
+  border-radius: 999px;
+  overflow: hidden;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-indicator {
+  background-color: #008ed1;
+  padding: 0 15px;
+  color: white;
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
