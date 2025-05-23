@@ -1,4 +1,4 @@
-![45zrljt85a2f1](https://github.com/user-attachments/assets/46c5891d-c47e-4875-afac-77663fab203a)# Introdução
+# Introdução
 
 O projeto **GreenWatch** surgiu com o objetivo de oferecer uma solução acessível, prática e sustentável para o cuidado com plantas domésticas, atendendo especialmente a um público diverso, composto por entusiastas da floricultura de baixa e média renda. 
 
@@ -72,3 +72,66 @@ Não serão implementadas, nesta fase, funcionalidades como controle automático
 - **C**: Utilizada na programação da placa **ESP32** e para estabelecer a comunicação entre o dispositivo e o back-end, garantindo o envio e recebimento de dados.
 
 - **HTML, CSS e JavaScript**: Tecnologias utilizadas para implementar a **interface web** acessível ao usuário. A página exibe os dados de umidade em **tempo real** e permite a seleção da planta por meio de um **menu dropdown**, ajustando as informações exibidas de acordo com a espécie.
+
+## Arquitetura do sistema
+
+![arquitetura](https://github.com/user-attachments/assets/b6ce2ad8-29eb-4863-a519-69dc8ddbeeed)
+
+---
+
+# Resultados
+
+## Protótipo
+![prototipo](https://github.com/user-attachments/assets/79233fc1-b75e-41bf-a078-aff59eb25277)
+
+## Códigos das principais funcionalidades
+
+```cpp
+
+void loop() {
+  soilMoistureValue = analogRead(soilMoisturePin);
+  int moisturePercent = map(soilMoistureValue, 4095, 0, 0, 100);
+
+  Serial.print("Umidade do Solo: ");
+  Serial.print(moisturePercent);
+  Serial.println("%");
+
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+    http.begin("https://worried-wealthy-ferryboat.glitch.me/post_dados");
+    http.addHeader("Content-Type", "application/json");
+
+    String jsonData = "{\"umidade\": " + String(moisturePercent) + ", \"temperatura\": 0}";
+    int httpResponseCode = http.POST(jsonData);
+
+    if (httpResponseCode > 0) {
+      String response = http.getString();
+      Serial.print("Resposta da API: ");
+      Serial.println(response);
+    } else {
+      Serial.print("Erro na requisição: ");
+      Serial.println(httpResponseCode);
+    }
+
+    http.end();
+  } else {
+    Serial.println("Não conectado ao Wi-Fi");
+  }
+
+  delay(10000);
+}
+```
+
+--- 
+
+# Resultados
+
+## Impacto do Sistema
+
+Ajudou a detectar umidade do solo sem prejudicar o meio-ambiente, focando em manter a natureza e suas estruturas intactas.
+
+## Melhorias Futuras
+
+- Novos sensores
+- Aumentar o tamanho do projeto
+- Estrutura aprimorada (embalagem, placas eletrônicas, circuitos elétricos, etc.)
