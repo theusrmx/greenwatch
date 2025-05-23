@@ -1,4 +1,4 @@
-# Introdução
+![45zrljt85a2f1](https://github.com/user-attachments/assets/46c5891d-c47e-4875-afac-77663fab203a)# Introdução
 
 O projeto **GreenWatch** surgiu com o objetivo de oferecer uma solução acessível, prática e sustentável para o cuidado com plantas domésticas, atendendo especialmente a um público diverso, composto por entusiastas da floricultura de baixa e média renda. 
 
@@ -51,7 +51,10 @@ Não serão implementadas, nesta fase, funcionalidades como controle automático
 
 # Cronograma
 
-> *Insira aqui uma imagem ou tabela de todo o planejamento do projeto (com atividades e datas). A periodicidade das tarefas será de 2 semanas. O cronograma deve abranger todo o processo de construção do projeto. Isso pode ser feito diretamente neste doc, no Excel, Canva etc.*
+### 📅 Cronograma do Projeto
+
+![crono01](https://github.com/user-attachments/assets/4aa44a6d-da39-4b88-bb03-7ad4f8bd87f1)
+
 
 ---
 
@@ -59,17 +62,13 @@ Não serão implementadas, nesta fase, funcionalidades como controle automático
 
 ## Modelagem do sistema
 
-> *Dica: a modelagem do seu sistema são diagramas (desenhos) da sua estrutura ou comportamento. A UML (Unified Modelling Language) oferece diversos diagramas para que você possa modelar seu sistema. Escolha, pelo menos, dois modelos e insira aqui.*
-
-Exemplos sugeridos:
-
-- **Diagrama de Casos de Uso**: mostra as relações entre Atores e Processos.
-- **Diagrama de Classes**: mostra as relações entre as classes do sistema.
-- **MER (Modelo Entidade-Relacionamento)**: mostra as relações entre os dados das tabelas do banco de dados.
-
-Ferramentas recomendadas: Lucidchart, Draw.io, etc.
+### Diagrama de caso de uso
+![caso_de_uso](https://github.com/user-attachments/assets/7bdfdf48-9225-434e-8d45-3b344e16b970)
 
 ## Tecnologias utilizadas
 
-- **Python**: Para construção da API do sistema utilizamos o framework **FastAPI**.
+- **Python**: Para construção da API do sistema utilizamos o framework **FastAPI**, visando sua alta performance e simplicidade na definição de rotas e respostas HTTP.
+
 - **C**: Utilizada na programação da placa **ESP32** e para estabelecer a comunicação entre o dispositivo e o back-end, garantindo o envio e recebimento de dados.
+
+- **HTML, CSS e JavaScript**: Tecnologias utilizadas para implementar a **interface web** acessível ao usuário. A página exibe os dados de umidade em **tempo real** e permite a seleção da planta por meio de um **menu dropdown**, ajustando as informações exibidas de acordo com a espécie.
