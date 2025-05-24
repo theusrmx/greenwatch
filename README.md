@@ -135,3 +135,29 @@ Ajudou a detectar umidade do solo sem prejudicar o meio-ambiente, focando em man
 - Novos sensores
 - Aumentar o tamanho do projeto
 - Estrutura aprimorada (embalagem, placas eletrônicas, circuitos elétricos, etc.)
+
+  ---
+
+  # Divulgação
+
+
+  ## LinkedIn do projeto
+  - https://pt.linkedin.com/pulse/greenwatch-sistema-inteligente-de-monitoramento-das-matheus-a3axf
+
+ 
+  ## Seminário de Projetos de Software
+   
+![s01](https://github.com/user-attachments/assets/7f27678e-de51-4d58-ad90-9e7c45a995cb)
+
+- Da esquerda para direita: Matheus Ramos, Douglas Carlos, Vinícius Teixeira e Emilly Araújo
+
+  
+![s02](https://github.com/user-attachments/assets/22a5f832-5296-48a5-93e8-a8c7f17a8021)
+
+- Vinícius Teixeira apresentando o funcionamento do sensor de umidade
+
+
+
+![s03](https://github.com/user-attachments/assets/fd4a4dad-2fae-405a-bfcc-a9d9567fd757)
+
+- Participantes do evento assistindo a apresentação
