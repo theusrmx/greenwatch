@@ -136,16 +136,16 @@ Ajudou a detectar umidade do solo sem prejudicar o meio-ambiente, focando em man
 - Aumentar o tamanho do projeto
 - Estrutura aprimorada (embalagem, placas eletrônicas, circuitos elétricos, etc.)
 
-  ---
+---
 
-  # Divulgação
+# Divulgação
 
 
-  ## LinkedIn do projeto
-  - https://pt.linkedin.com/pulse/greenwatch-sistema-inteligente-de-monitoramento-das-matheus-a3axf
+## LinkedIn do projeto
+- https://pt.linkedin.com/pulse/greenwatch-sistema-inteligente-de-monitoramento-das-matheus-a3axf
 
  
-  ## Seminário de Projetos de Software
+## Seminário de Projetos de Software
    
 ![s01](https://github.com/user-attachments/assets/7f27678e-de51-4d58-ad90-9e7c45a995cb)
 
@@ -161,3 +161,18 @@ Ajudou a detectar umidade do solo sem prejudicar o meio-ambiente, focando em man
 ![s03](https://github.com/user-attachments/assets/fd4a4dad-2fae-405a-bfcc-a9d9567fd757)
 
 - Participantes do evento assistindo a apresentação
+
+---
+
+# Relato individual do processo
+
+### Douglas Carlos de Castro
+- O desenvolvido com a placa ESP32 e programado em linguagem C, que aprendi durante este curso por meio da plataforma Arduino. No projeto, participei da programação e da montagem do sistema, desenvolvendo o código para leitura do sensor de umidade e ajudando na integração dos componentes com a placa.
+
+### Matheus Ramos Marcolino
+- Tive a oportunidade de aprimorar meus conhecimentos em desenvolvimento de projetos de IOT, fazendo a transação de dados coletados por um sensor de umidade via uma API Rest desenvolvida em Python, utilizando o framework FastAPI.
+
+### Emilly Araújo Marques
+- No Projeto GreenWatch, atuei na programação da ESP32 em C, desenvolvi a API em Python com FastAPI e contribuí na interface web com HTML, CSS e JavaScript. Aprimorei meus conhecimentos em IoT, integração de sistemas e desenvolvimento full stack.
+
+
