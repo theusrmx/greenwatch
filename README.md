@@ -175,4 +175,7 @@ Ajudou a detectar umidade do solo sem prejudicar o meio-ambiente, focando em man
 ### Emilly Araújo Marques
 - No Projeto GreenWatch, atuei na programação da ESP32 em C, desenvolvi a API em Python com FastAPI e contribuí na interface web com HTML, CSS e JavaScript. Aprimorei meus conhecimentos em IoT, integração de sistemas e desenvolvimento full stack.
 
+### Vinícius Teixeira Tamasauskas
+- No Projeto, fique responsável pelo hardware do projeto, na programação e teste do código, compilação e teste e ajuste do sensor de umidade em campo para garantir que as informações geradas está sendo enviada para API aprimorando meus conhecimentos em IoT na linguagem de programação.
+
 
