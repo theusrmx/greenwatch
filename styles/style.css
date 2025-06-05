@@ -11,6 +11,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(to bottom, #a8e6cf, #ffffff);
+  position: relative;
 }
 
 .container {
@@ -18,6 +20,40 @@ body {
   width: 100%;
   max-width: 500px;
   padding: 20px;
+}
+
+.snackbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .logo {
@@ -30,20 +66,11 @@ body {
   height: 300px;
   margin: 0 auto;
   margin-bottom: 20px;
-  /* Apenas para visualização do espaço reservado */
-  /* background-color: #e0e0e0; */
 }
 
 .emoji-msg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  width: 100%;
   margin-bottom: 40px;
-}
-
-.emoji {
-  font-size: 40px;
 }
 
 .msg {
@@ -60,30 +87,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00aaff;
   border-radius: 999px;
   overflow: hidden;
-  width: fit-content;
-  margin: 0 auto;
   cursor: pointer;
+  padding: 5px;
+  background: linear-gradient(to right, #00ff87, #0fefb6);
+  box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
 }
 
-.search-btn {
-  background: none;
+/* Estilo bonito pro select */
+.search-select {
+  background: transparent;
   border: none;
-  padding: 15px 20px;
   color: white;
   font-weight: bold;
   font-size: 16px;
+  padding: 15px 40px 15px 20px;
+  border-radius: 999px;
   cursor: pointer;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  position: relative;
 }
 
-.dropdown-indicator {
-  background-color: #008ed1;
-  padding: 0 15px;
+/* Opcional: seta customizada via pseudo-elemento */
+.input-wrapper::after {
+  content: "⌄";
+  position: absolute;
+  right: 20px;
   color: white;
   font-size: 18px;
-  height: 100%;
-  display: flex;
-  align-items: center;
+  pointer-events: none;
 }

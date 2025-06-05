@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GreenWatch</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
   <div class="container">
-    <header>
-      <img src="logo.svg" alt="Logo" class="logo"> <!-- Substitua por sua logo -->
-    </header>
+
+    <div class="snackbar">
+      <span>GreenWatch Online</span>
+      <button class="close-btn">Sair</button>
+    </div>
 
     <main>
-
       <div id="medidor"></div>
       <div id="umidade" class="umidade-display"></div>
 
-
       <div class="emoji-msg">
-        <span class="emoji">😐</span>
         <div class="msg">Vamos cuidar da sua plantinha?</div>
       </div>
     </main>
 
     <footer>
       <div class="input-wrapper">
-        <button class="search-btn">
-          🔍 Nome da planta
-        </button>
-        <div class="dropdown-indicator">⌄</div>
+        <select class="search-select">
+          <option disabled selected>🔍 Nome da planta</option>
+          <option>Espada-de-São-Jorge</option>
+          <option>Zamioculca</option>
+          <option>Jiboia</option>
+          <option>Lírio-da-paz</option>
+          <option>Samambaia</option>
+          <option>Maranta</option>
+          <option>Peperômia</option>
+          <option>Antúrio</option>
+          <option>Begônia</option>
+          <option>Pacová</option>
+          <option>Cactos</option>
+          <option>Suculentas</option>
+          <option>Areca (Palmeira Chamaedorea)</option>
+          <option>Fitônia</option>
+          <option>Orquídea (Phalaenopsis)</option>
+        </select>
       </div>
     </footer>
   </div>
 
   <script src="./scripts/js-fluid-meter.js"></script>
   <script src="./scripts/connect_api.js"></script>
-  
+
+  <script>
+    document.querySelector('.close-btn').addEventListener('click', function () {
+      document.querySelector('.snackbar').style.display = 'none';
+    });
   </script>
 </body>
+
+</html>
