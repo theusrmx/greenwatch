@@ -17,8 +17,17 @@
     </div>
 
     <main>
+      <!-- Medidor de umidade -->
       <div id="medidor"></div>
       <div id="umidade" class="umidade-display"></div>
+
+      <!-- Faixa ideal de umidade -->
+      <div id="umidade-texto" class="umidade-ideal">
+        Selecione uma planta para ver o nível de umidade ideal.
+      </div>
+
+      <!-- Estado da umidade (baixo, adequado, alto) -->
+      <div id="estado" class="umidade-status"></div>
 
       <div class="emoji-msg">
         <div class="msg">Vamos cuidar da sua plantinha?</div>
@@ -27,7 +36,7 @@
 
     <footer>
       <div class="input-wrapper">
-        <select class="search-select">
+        <select id="plant-select" class="search-select">
           <option disabled selected>🔍 Nome da planta</option>
           <option>Espada-de-São-Jorge</option>
           <option>Zamioculca</option>
@@ -50,7 +59,7 @@
   </div>
 
   <script src="./scripts/js-fluid-meter.js"></script>
-  <script src="./scripts/connect_api.js"></script>
+  <script src="./scripts/connect_api.js"></script> <!-- aqui vai o script que vai incluir toda a lógica -->
 
   <script>
     document.querySelector('.close-btn').addEventListener('click', function () {

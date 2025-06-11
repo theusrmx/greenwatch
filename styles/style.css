@@ -95,11 +95,11 @@ main {
   box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
 }
 
-/* Estilo bonito pro select */
+
 .search-select {
   background: transparent;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 16px;
   padding: 15px 40px 15px 20px;
@@ -111,7 +111,11 @@ main {
   position: relative;
 }
 
-/* Opcional: seta customizada via pseudo-elemento */
+.search-select option{
+  color: #000;
+}
+
+
 .input-wrapper::after {
   content: "⌄";
   position: absolute;
