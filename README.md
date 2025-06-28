@@ -162,6 +162,13 @@ Ajudou a detectar umidade do solo sem prejudicar o meio-ambiente, focando em man
 
 - Participantes do evento assistindo a apresentação
 
+## FENETEC
+
+![Imagem do WhatsApp de 2025-06-27 à(s) 21 19 12_0d5200b6](https://github.com/user-attachments/assets/d732e4cc-f90f-455e-9b25-7bc056fac64e)
+![Imagem do WhatsApp de 2025-06-27 à(s) 21 19 12_05a8b4a2](https://github.com/user-attachments/assets/f324ef44-dd7b-4da5-a4a6-ad6f9b90902b)
+![Imagem do WhatsApp de 2025-06-27 à(s) 21 19 13_41906d84](https://github.com/user-attachments/assets/b2c52bfd-1249-47c1-a409-2d1d5b3ef115)
+
+
 ---
 
 # Relato individual do processo
